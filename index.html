@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to the API</h1>
+
+  <h2>How to utilise this API</h2>
+  <ul>
+    <li>
+      <strong>POST /signup :</strong> Register a new user. The payload should be a JSON object containing "username" and
+      "password" keys.
+    </li>
+    <li>
+      <strong>POST /login :</strong> Authenticate an existing user. The payload should be a JSON object containing
+      "username" and "password" keys. This endpoint returns a JWT token when successful.
+    </li>
+    <li>
+      <strong>GET /logout :</strong> Invalidate a user's JWT token. This endpoint does not require a payload.
+    </li>
+  </ul>
+</body>
+
+</html>
